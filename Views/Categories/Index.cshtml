@@ -1,0 +1,62 @@
+﻿@model IEnumerable<IcomeControl.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista de Categorias</h1>
+
+<p>
+    <a class="btn btn-outline-dark" asp-action="Create">Crear Nueva</a>
+</p>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NameCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameCategory)
+            </td>
+            <td>
+                @if (item.Type == "IN")
+                {
+                    <p>Ingreso</p>
+                }
+                else
+                {
+                    <p>Gasto</p>
+                }
+            </td>
+            <td>
+                @if (item.State == true)
+                {
+                    <p class="btn btn-outline-dark">Activo</p>
+                }
+                else
+                {
+                    <p class="btn btn-outline-warning">Inactivo</p>
+                }
+            </td>
+            <td>
+                <a class="btn btn-outline-success" asp-action="Edit" asp-route-id="@item.Id">editar</a> |
+                <a class="btn btn-outline-primary" asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
