@@ -13,29 +13,13 @@ para que el Software corra correctamente se debe instalar primero las siquientes
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) como gestor de base de datos.
 
 **Proceso de instalación:** 
-- ingreasa a [Azure DevOps](https://dev.azure.com/celuladevops/) y ingresas en la pestaña de Ejercicios 
+- Cuando estés dentro del repositorio en Git, puedes descargar el software de las siguientes maneras, debe dar clic sobre code y luego, la primera opción es descargando el documento zip, descomprimirlo y ponerlo a correr desde vs 2019 o el editor de tu preferencia, la segunda opción es copiar el link que aparece en la opción clone
 
-![Image-1](https://i.postimg.cc/jdqNNVzf/Image-1.png)
-
-- Luego ingrese a Repos/Files
-
-![Image-2](https://i.postimg.cc/g2Q6fn1y/Image-2.png)
-
-- Debe asegurarse que este en el repositorio Juan-autoestudio
-
-![Image-5](https://i.postimg.cc/JzxRkg5s/Image-5.png)
-
-- Después de esto debe ingresar a la opción Clone
-
-![Image-3](https://i.postimg.cc/m2d9ydw5/Image-3.png)
-
-- Cuando este dentro de clon debe copiar la linea de comando que alli registra. 
- 
-![Image-4]( https://i.postimg.cc/Z5Cd7rsK/Image-4.png)
+![Image-1](https://i.postimg.cc/RFV90zqV/image-1.png)
 
 - Cuando Realice los pasos anteriores, ingresa a la pestaña de comandos de su preferencia, ingresa a la carpeta donde desea guardar el programa y ejecuta el siguiente comando con la línea de comando anteriormente copiada. 
 ```javascript
-git clone https://celuladevops@dev.azure.com/celuladevops/Ejercicios/_git/Juan-autoestudio
+git clone https://github.com/jmorenoig/IcomeControl.git
 ```
 
 - Al finalizar los siquientes pasos el programa esta listo para ser ejecutado, para ejecutarlo debemos abrir la carpete donde se guardo y presionar doble clic sobre IcomeControl.sln
